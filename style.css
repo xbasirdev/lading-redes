@@ -21,6 +21,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 2rem;
+	border-bottom: 2px solid #f26419;
   }
   
   .header h2 {
@@ -39,9 +40,35 @@
 	border: none;
 	cursor: pointer;
   }
+
+  .switcher-mobile{
+	margin-left: auto;
+	margin-top: -20px;
+	margin-bottom: 15px;
+  }
+
+  /* Ocultar clase en pantallas con ancho menor a 600px */
+  @media screen and (max-width: 600px) {
+	.switcher-main {
+		display: none;
+	}
+
+  }
+
+  @media screen and (min-width: 600px) {
+	.switcher-mobile {
+		display: none;
+	}
+  }
   
   .lang-en.active,
   .lang-es:hover {
+	background-color: #f26419;
+	color: #fff !important;
+  }
+
+  .lang-en-mobile.active,
+  .lang-es-mobile:hover {
 	background-color: #f26419;
 	color: #fff !important;
   }
@@ -87,6 +114,10 @@
   .profile p {
 	font-size: 1.2rem;
 	margin-bottom: 2rem;
+  }
+
+  .technologies {
+	margin-top: -22px;
   }
   
   .social-media {
