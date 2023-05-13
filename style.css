@@ -1,0 +1,157 @@
+/* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 1.5;
+  }
+  
+  .container {
+	margin: 0 auto;
+	padding: 2rem;
+  }
+  
+  .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 2rem;
+  }
+  
+  .header h2 {
+	font-size: 2rem;
+  }
+  
+  .language-switcher {
+	display: flex;
+	gap: 1rem;
+	margin-left: -70px;
+  }
+  
+  .language-switcher button {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .lang-en.active,
+  .lang-es:hover {
+	background-color: #f26419;
+	color: #fff !important;
+  }
+  
+  .dark-mode-switcher {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+  }
+  
+  .dark-mode-switcher label {
+	cursor: pointer;
+  }
+  
+  .dark-mode-switcher input[type="checkbox"] {
+	display: none;
+  }
+  
+  .dark-mode-switcher input[type="checkbox"] + label::before {
+	content: "☀️";
+  }
+  
+  .dark-mode-switcher input[type="checkbox"]:checked + label::before {
+	content: "🌙";
+  }
+  
+  .profile {
+	text-align: center;
+  }
+  
+  .profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 1rem;
+  }
+  
+  .profile h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  .profile p {
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+  }
+  
+  .social-media {
+	display: flex;
+	flex-direction: column;
+  }
+
+  .social-media .fa-brands{
+	margin-right: 5px;
+	font-size: 1rem;
+  }
+  
+  .social-media a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 3rem;
+	margin-bottom: 1rem;
+	background-color: #f26419;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+  }
+  
+  .social-media a span {
+	margin-left: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+  }
+  
+  .social-media a:hover {
+	background-color: #931621;
+	transform: translateY(-5px);
+  }
+  
+  .dark-mode .container {
+	background-color: #11001c;
+	color: #fff;
+  }
+  
+  .dark-mode .header {
+	border-bottom: 2px solid #f26419;
+  }
+  
+  .dark-mode .language-switcher button {
+	background-color: #f26419;
+  }
+  
+  .dark-mode .language-switcher button:hover {
+	background-color: #931621;
+  }
+  
+  .dark-mode .social-media a {
+	background-color: #f26419;
+  }
+  
+  .dark-mode .social-media a:hover {
+	background-color: #931621;
+  }
+  
+  .dark-mode .dark-mode-switcher label {
+	color: #fff;
+  }
+  
